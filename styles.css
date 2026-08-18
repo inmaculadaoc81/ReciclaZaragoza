@@ -9,3 +9,23 @@
 @media(max-width:560px){.cards,.equipment,.gallery,.trust-grid{grid-template-columns:1fr}.brand img{width:210px}.hero h1{font-size:40px}}
 
 .service-card{padding:0;overflow:hidden}.service-card .service-img{width:100%;height:180px;object-fit:cover;display:block}.service-card h3,.service-card p,.service-card a{margin-left:22px;margin-right:22px}.service-card h3{margin-top:20px}.service-card a{display:inline-block;margin-bottom:22px}
+
+/* ===== Servicios: todas las tarjetas con imagen ===== */
+.service-card{
+  padding-top:0 !important;
+  overflow:hidden;
+}
+.service-card .service-img{
+  display:block;
+  width:calc(100% + 44px);
+  max-width:none;
+  height:180px;
+  object-fit:cover;
+  object-position:center;
+  margin:0 -22px 18px;
+  border-radius:14px 14px 0 0;
+  border-bottom:1px solid var(--line);
+}
+@media(max-width:560px){
+  .service-card .service-img{height:210px}
+}
