@@ -7,7 +7,7 @@ module.exports=async(req,res)=>{
   if(!nombre||!telefono||!email||!mensaje)return res.status(400).json({ok:false});
   const port=Number(process.env.SMTP_PORT||465);
   const tr=nodemailer.createTransport({host:process.env.SMTP_HOST,port,secure:String(process.env.SMTP_SECURE??"true")==="true",auth:{user:process.env.SMTP_USER,pass:process.env.SMTP_PASS}});
-  await tr.sendMail({from:`"PuntoRecicla" <${process.env.SMTP_USER}>`,to:process.env.CONTACT_EMAIL||process.env.SMTP_USER,replyTo:email,subject:"Nueva consulta PuntoRecicla",text:`Nombre: ${nombre}\nTeléfono: ${telefono}\nEmail: ${email}\nTipo: ${tipo}\n\n${mensaje}`});
+  await tr.sendMail({from:`"ReciclaZaragoza" <${process.env.SMTP_USER}>`,to:process.env.CONTACT_EMAIL||process.env.SMTP_USER,replyTo:email,subject:"Nueva consulta ReciclaZaragoza",text:`Nombre: ${nombre}\nTeléfono: ${telefono}\nEmail: ${email}\nTipo: ${tipo}\n\n${mensaje}`});
   res.status(200).json({ok:true});
  }catch(e){console.error(e);res.status(500).json({ok:false})}
 };
