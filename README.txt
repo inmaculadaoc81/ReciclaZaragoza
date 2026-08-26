@@ -13,12 +13,11 @@ visible.
 Colores: paleta rebrandeada al verde azulado del logo (#179988) en
 vez del naranja/azul marino de la plantilla original (PuntoRecicla).
 
-Dominio: http://reciclajedeordenadores.com.es/ (PENDIENTE DE
-CONFIRMAR — es el dominio de la versión de Madrid, PuntoRecicla. Este
-repo partía de una copia exacta de PuntoRecicla sin adaptar.
-Canonical, og:url, robots.txt, sitemap.xml y el "url" del JSON-LD
-siguen apuntando a ese dominio hasta que se confirme el dominio real
-de ReciclaZaragoza.)
+Dominio: https://reciclajeequiposinformaticos.com.es/
+(CONFIRMADO por el cliente. Corregido en canonical, og:url, JSON-LD,
+robots.txt y sitemap.xml — antes apuntaban a
+reciclajedeordenadores.com.es en http:// sin cifrar, el dominio de la
+versión de Madrid, PuntoRecicla.)
 
 Teléfono caja y botones: +34 910 05 47 24 / +34 914 46 85 03
 (mantenidos tal cual, según indicación del cliente)
@@ -68,13 +67,12 @@ REVISIÓN ADICIONAL (esta pasada):
   Tamaño del H1 aumentado: clamp(38-56px) → clamp(46-74px) en
   escritorio, 39px → 48px en móvil.
 
-AVISOS PENDIENTES (heredados, no resueltos en esta pasada — mismo caso
-que DysonValladolid/ThermomixValladolid, donde el cliente después
-confirmó el dominio real; aquí sigue sin confirmar):
-- Confirmar si http://reciclajedeordenadores.com.es/ es realmente el
-  dominio de ReciclaZaragoza o si sigue siendo el de la versión de
-  Madrid (PuntoRecicla). Nota: además de sin confirmar, sigue en
-  http:// sin cifrar; se corregirá a https:// en cuanto se confirme
-  el dominio real.
-- Confirmar si el enlace/iframe de Google Maps corresponde a una
-  ubicación de Zaragoza o si sigue apuntando a Madrid.
+AVISOS RESUELTOS EN ESTA PASADA:
+- Dominio confirmado por el cliente: https://reciclajeequiposinformaticos.com.es/
+  (corregido en canonical, og:url, JSON-LD, robots.txt, sitemap.xml;
+  también se aprovechó para pasarlo a https://).
+
+AVISO PENDIENTE (heredado, sin confirmar):
+- El enlace/iframe de Google Maps sigue sin confirmarse si corresponde
+  a una ubicación de Zaragoza o si sigue apuntando a Madrid; no se ha
+  tocado.

@@ -1,10 +1,10 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ReciclaZaragoza | Reciclaje de Ordenadores y Destrucción de Datos en Zaragoza</title>
 <meta name="description" content="ReciclaZaragoza: reciclaje de ordenadores, portátiles y equipos informáticos y servicio de destrucción de datos personales en Zaragoza.">
-<link rel="canonical" href="http://reciclajedeordenadores.com.es/"><link rel="icon" href="/assets/favicon-reciclazaragoza.png"><link rel="stylesheet" href="/assets/styles.css">
+<link rel="canonical" href="https://reciclajeequiposinformaticos.com.es/"><link rel="icon" href="/assets/favicon-reciclazaragoza.png"><link rel="stylesheet" href="/assets/styles.css">
 <meta property="og:title" content="ReciclaZaragoza | Reciclaje de Ordenadores y Destrucción de Datos">
 <meta property="og:description" content="Reciclaje de ordenadores, portátiles y equipos informáticos y destrucción de datos personales en Zaragoza.">
-<meta property="og:url" content="http://reciclajedeordenadores.com.es/">
+<meta property="og:url" content="https://reciclajeequiposinformaticos.com.es/">
 <meta property="og:type" content="website">
 <meta name="robots" content="index,follow">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P97Y7NE5B7"></script>
@@ -65,7 +65,7 @@ menuBtn?.addEventListener('click',()=>{const open=mainMenu.classList.toggle('ope
 mainMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mainMenu.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}));
 const f=document.getElementById('contact-form'),s=document.getElementById('status');f.addEventListener('submit',async e=>{e.preventDefault();s.textContent='Enviando...';try{const r=await fetch('/api/contacto',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(f).entries()))});if(!r.ok)throw 0;s.textContent='Consulta enviada correctamente.';s.style.color='green';f.reset()}catch{s.textContent='No se pudo enviar. Contacta por teléfono o WhatsApp.';s.style.color='#b72f2f'}});
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ReciclaZaragoza","url":"http://reciclajedeordenadores.com.es/","telephone":"+34 910 05 47 24","description":"Reciclaje de ordenadores, portátiles y equipos informáticos y destrucción de datos personales en Zaragoza.","address":{"@type":"PostalAddress","addressLocality":"Zaragoza","addressCountry":"ES"},"areaServed":"Zaragoza","sameAs":["https://maps.app.goo.gl/mWm3BBLAc3JGMpFH7","https://www.youtube.com/channel/UCaxAqLD9Mk5gvzqoDedlWSA"]}</script><div id="cookie-banner" class="cookie-banner" hidden>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ReciclaZaragoza","url":"https://reciclajeequiposinformaticos.com.es/","telephone":"+34 910 05 47 24","description":"Reciclaje de ordenadores, portátiles y equipos informáticos y destrucción de datos personales en Zaragoza.","address":{"@type":"PostalAddress","addressLocality":"Zaragoza","addressCountry":"ES"},"areaServed":"Zaragoza","sameAs":["https://maps.app.goo.gl/mWm3BBLAc3JGMpFH7","https://www.youtube.com/channel/UCaxAqLD9Mk5gvzqoDedlWSA"]}</script><div id="cookie-banner" class="cookie-banner" hidden>
   <p>Utilizamos cookies y tecnologías similares propias y de terceros, de sesión o persistentes, para hacer funcionar de manera segura nuestra página web y personalizar su contenido. Igualmente, utilizamos cookies para medir y obtener datos de la navegación que realizas y para ajustar la publicidad a tus gustos y preferencias. Puedes aceptar el uso de cookies a continuación.</p>
   <div class="cookie-actions">
     <button type="button" class="cookie-btn" id="cookie-accept">Aceptar</button>
