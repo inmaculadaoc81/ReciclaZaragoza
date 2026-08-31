@@ -76,3 +76,33 @@ AVISO PENDIENTE (heredado, sin confirmar):
 - El enlace/iframe de Google Maps sigue sin confirmarse si corresponde
   a una ubicación de Zaragoza o si sigue apuntando a Madrid; no se ha
   tocado.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 verificado: "Tu ordenador ya no se usa. Aquí cuidamos tus
+  datos." es afirmativo, corto, y con estructura distinta a la del
+  repo hermano PuntoRecicla ("Reciclamos tus equipos. Protegemos toda
+  tu información."). No se ha tocado.
+- BUG REAL — el botón CTA de teléfono no tenía icono, a diferencia del
+  de WhatsApp. Añadido (verificado con cuidado el cierre de las
+  etiquetas </a>: 18 aperturas / 18 cierres).
+- BUG REAL — la casilla de política de privacidad existía pero el
+  texto no enlazaba a ningún sitio. Añadido el enlace estándar de la
+  familia a https://kelatos.com/privacy-policy/, resaltado en el tono
+  cian de la paleta (var(--cyan), #18a6c9) en vez de var(--blue), que
+  en esta plantilla rebrandeada es en realidad un verde-negro oscuro
+  y no un azul visible.
+- BUG REAL — texto decorativo gigante ".data:after" ("DATOS", 190px)
+  sin ninguna reducción de tamaño en tablet/móvil, mismo bug ya
+  corregido en el repo hermano PuntoRecicla (plantilla compartida).
+  Añadida (100px tablet, 64px móvil).
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- No se ha añadido franja de aviso de servicio técnico independiente:
+  no aplica a este negocio (reciclaje de equipos y destrucción de
+  datos, sin el enfoque de reparación de marcas concretas del resto
+  de la familia).
+- Verificado sin bugs: no existe ninguna etiqueta rotada tipo
+  hero-chip (.shape es una forma decorativa sin texto); Cal.com ya
+  estaba presente; schema.org ya usaba correctamente el teléfono de la
+  caja de información; formulario correctamente conectado a
+  /api/contacto.
