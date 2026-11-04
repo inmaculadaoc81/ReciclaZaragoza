@@ -129,3 +129,12 @@ REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente 
 - No se ha añadido franja de aviso de servicio técnico independiente:
   no aplica a este negocio (reciclaje de equipos y destrucción de
   datos, sin el enfoque de reparación del resto de la familia).
+
+BLOG (/blog):
+- Los artículos NO viven en este repositorio: los genera y aprueba el agente
+  SEO de Kelatos (Agentes V2 → organización «ReciclaZaragoza», clave reciclazaragoza)
+  y se leen en vivo de la API pública de Kelatos, sin token:
+  https://db.affirmatechnology.com/kelatos-api/publico/blog?org=reciclazaragoza
+- api/blog.js + lib/blog.js generan /blog y /blog/<slug> en el servidor.
+- api/sitemap.js genera /sitemap.xml (se eliminó el sitemap.xml estático).
+- Estilos en assets/blog.css. Enlace «Blog» en el menú y en el pie.
